@@ -1,0 +1,17 @@
+###get all categories
+GET  http://localhost:3001/category HTTP/1.1
+content-type: application/json
+Authorization: 'token'
+###get category by id
+GET  http://localhost:3001/category/2 HTTP/1.1
+content-type: application/json
+
+
+###save category
+POST http://localhost:3001/category HTTP/1.1
+content-type: application/json
+
+{
+    "name": "categori1",
+    "description": "desc1"
+}
